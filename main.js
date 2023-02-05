@@ -1,6 +1,6 @@
 import { questions } from "./models/questions.js";
 import { categories } from "./models/categories.js";
-import { Quiz } from "../models/quiz.js";
+import { Quiz } from "./models/quiz.js";
 import { UI } from "./models/UI.js";
 
 const renderPage = (quiz, ui) => {
