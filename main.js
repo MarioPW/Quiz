@@ -17,8 +17,8 @@ const renderPage = (quiz, ui) => {
 };
 function main(){
     const ui = new UI();     
-    const a = ui.getCategories(categories, (x) => {
-    const questionary = questions(x)
+    const a = ui.getCategories(categories, (category) => {
+    const questionary = questions(category)
     startQuiz(questionary)
     });   
 }
