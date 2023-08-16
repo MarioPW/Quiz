@@ -1,0 +1,130 @@
+body{
+    background-color: #2b2b2b;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 5%;
+}
+
+.top{
+    margin-top: 200px !important;       
+}
+.traslate{
+    animation: trasladar 1s; 
+}
+
+@keyframes trasladar {
+    from {
+        margin-top: 200px;       
+    }
+    to {
+        margin-top: 0;
+    }
+  }
+#form{
+    margin-bottom: 20px;
+}
+#resultSquires{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: auto;
+    padding-bottom: 40px;
+}
+.board-colors{
+    text-align: center;
+    color: aliceblue;
+    background-color:black;
+    padding: 11px;
+    border-radius: 11px;
+    border: 1px solid #031b1d;
+    margin: auto;
+    margin-bottom: 11px;
+    max-width: 800px;
+}
+.result-squire{
+    background-color: #4f65794b;
+    color: aliceblue;
+    padding: 11px;
+    border-radius: 11px;
+    margin: 5px;
+    min-width: 29px;
+}
+.my-button{
+    all: unset;
+    background-color: black;
+    border-bottom: 2px solid #581097;
+    color: aliceblue;
+    font-size: small;
+    padding: 7px;
+    border-bottom: 2px solid aqua ;
+    cursor: pointer;
+
+}
+.my-button:hover{
+    transition: 200ms;
+    color: aliceblue;
+    background-color: #4f65794b;
+
+}
+.my-button:active{
+    transform: translateY(1px);
+}
+mark{
+    background-color: aqua;
+}
+#entry{
+    all: unset;
+    background-color: #acd8ff;
+    color: #2b2b2b;
+    text-align: start;
+    margin: 15px;
+    padding: 5px 11px;
+    border-radius: 7px;
+    width: 200px;
+    box-sizing: border-box;
+}
+#entry:hover{
+    background-color: white;
+}
+#entry:focus{
+    background-color: white;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+    animation: mostrar 200ms;
+}
+#resultContainer{
+    position: relative;
+    min-height: 500px;
+}
+
+.paginator {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 18px;
+  }
+
+#currentButton{
+    border: 0 ;
+    background-color: #4f65794b;
+    color: aliceblue;
+  }
+
+@keyframes mostrar {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+    #resultContainer{
+        height: 560px;
+    }
+  }

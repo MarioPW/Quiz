@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secuences</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  </head>
+  <body id="body">
+    <div id="formContainer" class="board-colors top">
+      <h1 id="title">Series</h1>
+
+      <form id="form">
+        <div id="form-content">
+          <label for="entry">Enter a Range:</label>
+          <input type="number" id="entry" placeholder="Ex: 123:" required />
+          <!-- Serie Buttons from src/index.js -->
+        </div>
+      </form>
+    </div>
+
+    <div id="resultContainer" class="hide">
+      <h3 id="resultTittle"></h3>
+      <div id="resultSquires"></div>
+      <footer id="paginatorContainer" class="hide paginator">
+        <button id="previousButton" type="submit" class="my-button">
+          < previus
+        </button>
+        <button id="currentButton" value=""></button>
+        <button id="nextButton" type="submit" class="my-button">
+          next >
+        </button>
+      </footer>
+    </div>
+    <script src="./src/index.js" type="module"></script>
+  </body>
+</html>
