@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/logo.png">
+    </link>
+</head>
+
+<body class="bg-4">
+    <!-- NavBar -->
+    <header class="bg-3">
+        <div class="interior">
+            <a href="/Quiz/quiz.html" class="logo"><img src="assets/quiz-logo.png" alt="JS Logo"></a>
+            <nav class="nav">
+                <ul id="projects">
+                    <li><a href="#" id="myRecord">My Record</a></li>
+                    <!-- ToDo: save record in local storage -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div>
+        <div id="quiz" class="quiz-body bg-1">
+            <h1>My Survey</h1>
+            <hr />
+            <progress id="progress" max="100" value="0"></progress>
+            <h2 id="question"></h2>
+            <div id="choices" class="bg"> </div>
+            <hr />
+            <footer>
+            </footer>
+        </div>
+    </div>
+    <script src="./main.js" type="module"></script>
+</body>
+
+</html>
